@@ -46,7 +46,11 @@ public class FragmentFirst extends BaseFragment {
         Log.e(TAG, "onDestroy: " );
     }
 
-
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        Log.e(TAG, "onActivityCreated: " );
+    }
 
     @Override
     public void onDetach() {
